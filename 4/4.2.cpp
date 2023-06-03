@@ -1,15 +1,20 @@
 #include<iostream>
+#include<string>
 
 int main(){
     using namespace std;
-    const int ArSize=20;
-    char name[ArSize];
-    char dessert[ArSize];
+    //const int ArSize=20;
+    //char name[ArSize];
+    //char dessert[ArSize];
+    string name;
+    string dessert;
 
     cout<<"Enter your name:\n";
-    cin.getline(name, ArSize);
+    //cin.getline(name, ArSize);
+    getline(cin,name);
     cout<<"Enter your favorite dessert:\n";
-    cin.getline(dessert, ArSize);
+    //cin.getline(dessert, ArSize);
+    getline(cin,dessert);
     cout<<"I got some delicious "<<dessert;
     cout<<" for you, "<<name<<".\n";
     return 0;
