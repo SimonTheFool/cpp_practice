@@ -29,8 +29,10 @@ int main(){
         std::cin>>y;
         Cars[i].Make = m;
         Cars[i].Year = y;
-        std::cout<<"Make: "<<Cars[i].Make<<std::endl;
-        std::cout<<"Year: "<<Cars[i].Year<<std::endl;
+    }
+    std::cout<<"Here is your collection: \n";
+    for(int i=0;i<ArSize;i++){
+        std::cout<<Cars[i].Year<<" "<<Cars[i].Make<<std::endl;
     }
 
     delete [] Cars;
