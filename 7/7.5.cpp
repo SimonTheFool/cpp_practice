@@ -6,8 +6,10 @@ int main(){
     using namespace std;
     int number;
     cout << "Please input the number: \n";
-    cin >> number;
-    cout << Factorial(number);
+    while(cin >> number && number >= 0){
+        cout << Factorial(number) << endl;
+        cout << "Please input the number: \n";
+    }
 }
 
 long int Factorial(int num){
